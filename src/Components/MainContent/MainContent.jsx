@@ -5,6 +5,7 @@ import NavItems from '../Nav/NavItems';
 // About Us Component
 import AboutMe from '../Article/AboutUs/AboutMe';
 import Resume from '../Article/Resume/Resume';
+import Contact from '../Article/ContactMe/Contact';
 
 // React Hooks
 import React, { useState } from "react";
@@ -36,6 +37,12 @@ export default function MainContent() {
           data-page="resume"
         >
             <Resume />
+        </article>
+        <article
+          className={`resume ${activeItem === "Contact" ? "active" : ""}`}
+          data-page="resume"
+        >
+          <Contact />
         </article>
       </div>
     </>

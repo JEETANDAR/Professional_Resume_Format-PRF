@@ -1,7 +1,7 @@
 import React from 'react';
 
-const menuItems = ["About", "Resume"];
-const otherOptionsToAdd = [, "Portfolio", "Blog", "Contact"];
+const menuItems = ["About", "Resume", "Contact"];
+const otherOptionsToAdd = [, "Portfolio", "Blog"];
 
 export default function NavBar({ component: Component, onClick, activeItem }) {
   return (

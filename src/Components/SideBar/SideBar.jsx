@@ -14,6 +14,8 @@ const skills = [
   "AI enthusiast",
 ];
 
+import leetcodeImg from "../../assets/svgFiles/Coding/leetcode.svg";
+
 export default function SideBar() {
   return (
     <>
@@ -27,6 +29,7 @@ export default function SideBar() {
             <h1 className="name" title="Richard hanrick">
               Arden Diago
             </h1>
+          <p class="title">Developer</p>
           </div>
           <button className="info_more-btn" data-sidebar-btn>
             <span>Show Contacts</span>
@@ -47,28 +50,9 @@ export default function SideBar() {
           <div className="separator"></div>
 
           <ul className="social-list">
-            {
-              socialLinks.map((index, item) => {
-                <SocialLinks {...item} index = {index} />
-              })
-            }
-            <li className="social-item">
-              <a href="#" className="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li className="social-item">
-              <a href="#" className="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li className="social-item">
-              <a href="#" className="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
+            {socialLinks.map((item, index) => (
+              <SocialLinks key={index} {...item} />
+            ))}
           </ul>
         </div>
       </aside>

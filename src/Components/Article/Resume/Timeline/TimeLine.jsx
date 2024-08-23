@@ -7,7 +7,7 @@ import { bookOutline } from 'ionicons/icons';
 import TimeLineStops from "./TimeLineStops";
 
 // Data
-import { timeLineDetails } from "../../../Data/iconDataSheet";
+import { timeLineDetails } from '../../../../Data/ResumeData';
 
 export default function TimeLine({ iconSymbol, iconName }) {
     return (
