@@ -6,6 +6,7 @@ export default function SocialLinks({ iconLink, iconLogo }) {
       <a
         href={iconLink}
         className="social-link"
+        target="blank"
       >
         <IonIcon icon={iconLogo} />
       </a>
