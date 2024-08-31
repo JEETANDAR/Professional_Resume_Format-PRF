@@ -1,4 +1,8 @@
-import { mailOutline, phonePortraitOutline, locationOutline} from "ionicons/icons";
+import {
+  mailOutline,
+  phonePortraitOutline,
+  locationOutline,
+} from "ionicons/icons";
 
 // Constant Values
 const emailId = "diagoarden@gmail.com";
@@ -22,11 +26,28 @@ export const iconDS = [
   },
 ];
 
-import { logoFacebook, logoInstagram, logoTwitter, logoLinkedin } from "ionicons/icons";
+import {
+  logoFacebook,
+  logoInstagram,
+  logoTwitter,
+  logoLinkedin,
+} from "ionicons/icons";
 
 export const socialLinks = [
-  { iconLink: "#", iconLogo: logoFacebook },
-  { iconLink: "#", iconLogo: logoTwitter },
-  { iconLink: "#", iconLogo: logoInstagram },
-  { iconLink: "#", iconLogo: logoLinkedin },
+  {
+    iconLink: "https://www.facebook.com/arden.diago.7?mibextid=ZbWKwL",
+    iconLogo: logoFacebook,
+  },
+  {
+    iconLink: "https://x.com/ArdenDiago?t=ErRm_V_kT2woXcC_dbSjng&s=09",
+    iconLogo: logoTwitter,
+  },
+  {
+    iconLink: "https://www.instagram.com/arden.diago?igsh=endhZ3VraWhoYWlx",
+    iconLogo: logoInstagram,
+  },
+  {
+    iconLink: "https://www.linkedin.com/in/arden-diago-a89751279/",
+    iconLogo: logoLinkedin,
+  },
 ];
