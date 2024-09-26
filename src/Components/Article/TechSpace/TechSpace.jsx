@@ -1,5 +1,6 @@
 // Components
 import ShowcaseHeader from "../CommoneComponents/ShowcaseHeader";
+import GallaryView from "./Gallary/GallaryView";
 
 // CSS File
 import "./TechSpace.css";
@@ -28,6 +29,7 @@ export default function TechSpace() {
           ))}
         </div>
       </div>
+      <GallaryView />
     </>
   );
 }

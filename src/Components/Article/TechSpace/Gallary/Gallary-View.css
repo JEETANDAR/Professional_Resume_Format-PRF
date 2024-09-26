@@ -1,0 +1,99 @@
+:root {
+  --imageBorderRadius: 10px;
+  --containerWidth: fit-content;
+}
+
+.Container {
+  background-color: #363636;
+  width: var(--containerWidth);
+  padding: 15px;
+  border-radius: var(--imageBorderRadius);
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  border: 1px solid wheat;
+  color: white;
+}
+
+.Container img {
+  border-radius: var(--imageBorderRadius);
+  width: var(--containerWidth);
+}
+
+.Description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.GallaryView {
+  display: grid;
+  padding-top: 30px;
+}
+
+@media (max-width: 320px) {
+  :root {
+    --containerWidth: 100%;
+  }
+  .GallaryView {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  :root {
+    --containerWidth: 100%;
+  }
+  .GallaryView {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  :root {
+    --containerWidth: 100%;
+  }
+  .GallaryView {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  :root {
+    --containerWidth: 100%;
+  }
+  .GallaryView {
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root {
+      --containerWidth: 100%;
+    }
+    .GallaryView {
+      grid-template-columns: auto auto;
+      gap: 30px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    :root {
+      --containerWidth: 100%;
+    }
+    .GallaryView {
+      grid-template-columns: auto auto;
+      gap: 30px;
+    }
+  }
+
+
+  @media (min-width: 1440px) and (max-width: 2560px) {
+    :root {
+      --containerWidth: 100%;
+    }
+    .GallaryView {
+      grid-template-columns: auto auto;
+      gap: 30px;
+    }
+  }
