@@ -6,13 +6,15 @@ import NavItems from '../Nav/NavItems';
 import AboutMe from '../Article/AboutUs/AboutMe';
 import Resume from '../Article/Resume/Resume';
 import Contact from '../Article/ContactMe/Contact';
+import TechSpace from '../Article/TechSpace/TechSpace';
+
 
 // React Hooks
 import React, { useState } from "react";
 
 
 export default function MainContent() {
-  const [activeItem, setActiveItem] = useState("About");
+  const [activeItem, setActiveItem] = useState("TechSpace");
 
   function handleClick(itemName) {
     setActiveItem(itemName);
@@ -43,6 +45,12 @@ export default function MainContent() {
           data-page="resume"
         >
           <Contact />
+        </article>
+        <article
+          className={`resume ${activeItem === "TechSpace" ? "active" : ""}`}
+          data-page="resume"
+        >
+          <TechSpace />
         </article>
       </div>
     </>
