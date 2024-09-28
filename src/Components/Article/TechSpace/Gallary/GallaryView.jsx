@@ -20,7 +20,7 @@ export default function GallaryView() {
 
   return (
     <>
-      <div className="FilterFunction">
+      {/* <div className="FilterFunction">
         <div />
         <div />
         <div>
@@ -38,7 +38,7 @@ export default function GallaryView() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="GallaryView">
         {CertificatesArray.map((item, index) => (
           <Card {...item} index={index} />
