@@ -1,7 +1,6 @@
 import "./Gallary-View.css"; // Import the CSS file
-import DemoImage from "../../../../assets/Certificates/Demo.jpeg";
 
-const Card = ({ image, imageTitle, index }) => {
+const Card = ({ image, imageTitle}, index) => {
   return (
     <>
       <div className="Container" key={index}>

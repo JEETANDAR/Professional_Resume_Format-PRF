@@ -18,14 +18,15 @@ export default function TechSpace() {
         {/* Icons */}
         <div className="social-card ed-card">
           {IconArray.map((icon, index) => (
-            <button
-              key={index}
-              // onClick={() => window.open(icon.iconLink, '_blank')}
-              className={`Btn ${icon.className}`}
-            >
-              {icon.renderIcon}
-              <span className="BG" />
-            </button>
+            <>
+              <button
+                key={index}
+                onClick={() => window.open(icon.iconLink, '_blank')}
+                className={`Btn ${icon.className}`}
+              >
+                <span className="BG">{icon.renderIcon}</span>
+              </button>
+            </>
           ))}
         </div>
       </div>
