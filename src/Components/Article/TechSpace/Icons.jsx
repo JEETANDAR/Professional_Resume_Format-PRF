@@ -1,4 +1,4 @@
-const LinkedIn = () => (
+const LinkedInIcon = () => (
   <>
     <span className="svgContainer">
       <svg
@@ -87,7 +87,7 @@ const GithubIcon = () => {
   );
 };
 
-const Hackerrank = () => {
+const HackerrankIcon = () => {
   return (
     <>
       <svg
@@ -160,32 +160,32 @@ const XIcon = () => {
 
 export const IconArray = [
   {
-    iconLink: "https://open.spotify.com/playlist/0iTKOJJYLZQb4bjf7I7m3N",
+    iconLink: "https://www.linkedin.com/in/arden-diago/",
     className: "linkdin",
-    renderIcon: <LinkedIn />,
+    renderIcon: <LinkedInIcon />,
   },
   {
-    iconLink: "https://www.linkedin.com/in/arden-diago/",
+    iconLink: "https://www.codewars.com/users/Dauntless_25",
     className: "codewars",
     renderIcon: <CodewarsIcon />,
   },
   {
-    iconLink: "https://open.spotify.com/playlist/0iTKOJJYLZQb4bjf7I7m3N",
+    iconLink: "https://github.com/ArdenDiago",
     className: "github",
     renderIcon: <GithubIcon />,
   },
   {
-    iconLink: "https://open.spotify.com/playlist/0iTKOJJYLZQb4bjf7I7m3N",
+    iconLink: "https://www.hackerrank.com/profile/diagoarden",
     className: "hackerrank",
-    renderIcon: <Hackerrank />,
+    renderIcon: <HackerrankIcon />,
   },
   {
-    iconLink: "https://open.spotify.com/playlist/0iTKOJJYLZQb4bjf7I7m3N",
+    iconLink: "https://www.instagram.com/arden.diago/",
     className: "instagram",
     renderIcon: <InstagramIcon />,
   },
   {
-    iconLink: "https://open.spotify.com/playlist/0iTKOJJYLZQb4bjf7I7m3N",
+    iconLink: "https://x.com/ArdenDiago?t=XB-TZysOYvSwJmwnVfme2Q&s=09",
     className: "x",
     renderIcon: <XIcon />,
   },
