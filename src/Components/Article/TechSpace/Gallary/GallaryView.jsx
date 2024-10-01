@@ -42,7 +42,7 @@ export default function GallaryView() {
       <h3 className="h3 certificates-title">Certificates</h3>
       <div className="GallaryView">
         {CertificatesArray.map((item, index) => (
-          <Card {...item} index={index} />
+          <Card {...item} key={index} />
         ))}
       </div>
     </>

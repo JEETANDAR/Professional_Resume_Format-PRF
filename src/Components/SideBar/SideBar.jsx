@@ -28,7 +28,7 @@ export default function SideBar() {
             <h1 className="name" title="Richard hanrick">
               Arden Diago
             </h1>
-          <p class="title">Developer</p>
+          <p className="title">Developer</p>
           </div>
           <button className="info_more-btn" data-sidebar-btn>
             <span>Show Contacts</span>

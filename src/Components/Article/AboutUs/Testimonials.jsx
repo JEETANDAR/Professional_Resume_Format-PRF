@@ -7,8 +7,8 @@ export default function Testimonials({
   return (
     <>
       <li className="testimonials-item">
-        <div class="content-card" data-testimonials-item>
-          <figure class="testimonials-avatar-box">
+        <div className="content-card" data-testimonials-item>
+          <figure className="testimonials-avatar-box">
             <img
               src={imgLocation}
               alt={imgALT}
@@ -17,11 +17,11 @@ export default function Testimonials({
             />
           </figure>
 
-          <h4 class="h4 testimonials-item-title" data-testimonials-title>
+          <h4 className="h4 testimonials-item-title" data-testimonials-title>
             {clientName}
           </h4>
 
-          <div class="testimonials-text" data-testimonials-text>
+          <div className="testimonials-text" data-testimonials-text>
             <p>{clientDescription}</p>
           </div>
         </div>

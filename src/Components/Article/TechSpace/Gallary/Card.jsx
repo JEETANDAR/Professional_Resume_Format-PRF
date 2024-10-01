@@ -4,12 +4,11 @@ import "./Gallery-View.css";
 // Importing useState
 import { useState } from "react";
 
-const Card = ({ image, imageTitle, description }, index) => {
+const Card = ({ image, imageTitle, description }) => {
   const [isDescriptionVisible, setDescriptionVisible] = useState(false);
 
   function toggleDescription() {
     setDescriptionVisible((prev) => !prev);
-    console.log(typeof description);
   }
 
   const DescriptionButton = () => {
@@ -27,10 +26,11 @@ const Card = ({ image, imageTitle, description }, index) => {
         </>
       );
     }
+    return null;
   };
 
   return (
-    <div className="Container" key={index}>
+    <div className="Container">
       <div className="Certificate">
         <img src={image} alt={imageTitle} />{" "}
         {/* Added alt text for accessibility */}

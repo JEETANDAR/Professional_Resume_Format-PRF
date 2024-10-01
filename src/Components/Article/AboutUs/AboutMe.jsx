@@ -41,7 +41,7 @@ export default function AboutMe() {
 
       {/* <section className="clients">
         <h3 className="h3 clients-title">Clients</h3>
-        <ul class="clients-list has-scrollbar">
+        <ul className="clients-list has-scrollbar">
           Add the logo for the client over here.
         </ul>
       </section> */}
