@@ -1,14 +1,21 @@
 // Required Components
 import Loader from "./Components/Loader/Loader";
-// import SideBar from "./Components/SideBar/SideBar";
-// import MainContent from "./Components/MainContent/MainContent";
 
 // importing a loader
 import { Suspense, lazy } from "react";
 
-// lazy loading the components
-const SideBar2 = lazy(() => import("./Components/SideBar/SideBar"));
-const MainContent2 = lazy(() => import("./Components/MainContent/MainContent"));
+// function to introduce delay in lazy loading
+const lazyWithDelay = (importFunc, delay) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(importFunc());
+    }, delay);
+  });
+};
+
+// lazy loading the components with a delay
+const SideBar2 = lazy(() => lazyWithDelay(() => import("./Components/SideBar/SideBar"), 3500)); // 3500ms delay
+const MainContent2 = lazy(() => lazyWithDelay(() => import("./Components/MainContent/MainContent"), 3500)); // 3500ms delay
 
 function App() {
   return (
