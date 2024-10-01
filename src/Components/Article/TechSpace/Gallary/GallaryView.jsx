@@ -11,7 +11,7 @@ import {
 } from "../../../../Data/Certificates";
 
 // importing SVG file
-import searchIcon from "./searchIcon.svg";
+import searchIcon from "../../../../assets/svgFiles/Gallery/searchIcon.svg";
 
 export default function GallaryView() {
   const [filterValue, setFilterValue] = useState(CertificatesValues[0]);
@@ -39,6 +39,7 @@ export default function GallaryView() {
           </div>
         </div>
       </div> */}
+      <h3 className="h3 certificates-title">Certificates</h3>
       <div className="GallaryView">
         {CertificatesArray.map((item, index) => (
           <Card {...item} index={index} />

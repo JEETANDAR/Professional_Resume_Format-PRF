@@ -65,9 +65,8 @@
 .linkdin .BG {
   background: #0077b5;
 }
-
-.LeetCode .BG {
-  background: hsl(218, 41%, 36%);
+.Leetcode .BG {
+  background: hsl(0, 88%, 94%);
 }
 
 .discord .BG {

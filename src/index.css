@@ -842,8 +842,9 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+.certificates-title {margin-top: 20px;}
 
+.skills-list { padding: 20px; }
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 

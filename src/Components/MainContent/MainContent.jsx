@@ -14,7 +14,7 @@ import React, { useState } from "react";
 
 
 export default function MainContent() {
-  const [activeItem, setActiveItem] = useState("TechSpace");
+  const [activeItem, setActiveItem] = useState("About");
 
   function handleClick(itemName) {
     setActiveItem(itemName);
