@@ -163,10 +163,10 @@
 }
 @media (min-width: 1440px) and (max-width: 2560px) {
   :root {
-    --mt: 12em;
-    --width: 20em;
+    --mt: 22em;
+    --width: 50em;
   }
   .terminal-loader {
-    font-size: 3em;
+    font-size: 1em;
   }
 }
