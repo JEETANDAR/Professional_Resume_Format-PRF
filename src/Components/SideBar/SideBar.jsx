@@ -14,7 +14,6 @@ const skills = [
   "AI enthusiast",
 ];
 
-import leetcodeImg from "../../assets/svgFiles/Coding/leetcode.svg";
 
 export default function SideBar() {
   return (

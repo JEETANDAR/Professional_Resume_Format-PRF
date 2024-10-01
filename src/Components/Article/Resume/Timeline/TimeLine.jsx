@@ -1,5 +1,4 @@
 // React Files
-import '@ionic/react/css/core.css';
 import { IonIcon } from '@ionic/react';
 import { bookOutline } from 'ionicons/icons';
 

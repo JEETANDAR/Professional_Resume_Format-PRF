@@ -1,5 +1,3 @@
-import React from "react";
-import "@ionic/react/css/core.css";
 import { IonIcon } from "@ionic/react";
 
 export default function ListInfo({ icon, iconLogo, iconData }) {
