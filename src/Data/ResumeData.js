@@ -51,7 +51,7 @@ export const mySkills = [
   },
   {
     SkillName: "SQL",
-    SkillPercentage: "60",
+    SkillPercentage: "40",
   },
   {
     SkillName: "C",
@@ -59,6 +59,6 @@ export const mySkills = [
   },
   {
     SkillName: "Java",
-    SkillPercentage: "50",
+    SkillPercentage: "40",
   },
 ];
