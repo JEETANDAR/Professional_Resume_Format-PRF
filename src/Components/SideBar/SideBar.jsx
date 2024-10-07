@@ -21,7 +21,7 @@ export default function SideBar() {
       <aside className="sidebar" data-sidebar>
         <div className="sidebar-info">
           <figure className="avatar-box">
-            <img src={profilePhote} alt="Richard hanrick" width="80" />
+            <img src={profilePhote} alt="Arden Diago" width="80" />
           </figure>
 
           <div className="info-content">
