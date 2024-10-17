@@ -28,9 +28,13 @@ export default function SideBar() {
     setBTNActive((prev) => !prev);
   }
 
+  if (document.documentElement.clientWidth > 1440) {
+    setBTNActive((prev) => !prev);
+  }
+
   return (
     <>
-      <aside className={btnActive ? "sidebar" : "sidebar active"} data-sidebar>
+      <aside className={btnActive ? "sidebar active" : "sidebar"} data-sidebar>
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img src={profilePhote} alt="Arden Diago" width="80" />
