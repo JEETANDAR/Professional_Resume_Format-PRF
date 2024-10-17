@@ -4,8 +4,14 @@ import profilePhote from "../../assets/images/my-avatar.png";
 import ListInfo from "./ListInfo";
 import SocialLinks from "./SocialLinks";
 
+import { IonIcon } from "@ionic/react";
+import { chevronDown } from 'ionicons/icons';
+
 // Importing all the Data.
 import { iconDS, socialLinks } from "../../Data/iconDataSheet";
+
+import { useState } from "react";
+
 const skills = [
   "Backend Development",
   "python developer",
@@ -16,9 +22,15 @@ const skills = [
 
 
 export default function SideBar() {
+  const [btnActive, setBTNActive] = useState(0);
+  
+  function butionState() {
+    setBTNActive((prev) => !prev);
+  }
+
   return (
     <>
-      <aside className="sidebar" data-sidebar>
+      <aside className={btnActive ? "sidebar" : "sidebar active"} data-sidebar>
         <div className="sidebar-info">
           <figure className="avatar-box">
             <img src={profilePhote} alt="Arden Diago" width="80" />
@@ -30,10 +42,10 @@ export default function SideBar() {
             </h1>
           <p className="title">Developer</p>
           </div>
-          <button className="info_more-btn" data-sidebar-btn>
+          <button className="info_more-btn" data-sidebar-btn onClick={butionState}>
             <span>Show Contacts</span>
 
-            <ion-icon name="chevron-down"></ion-icon>
+            <IonIcon icon={chevronDown} />
           </button>
         </div>
 
