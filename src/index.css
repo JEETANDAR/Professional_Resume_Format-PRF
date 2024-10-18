@@ -1887,3 +1887,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+.timeline-text a {
+  color: #FFCF68;
+}
+
+.timeline-text a:hover {
+  text-decoration: underline;
+}

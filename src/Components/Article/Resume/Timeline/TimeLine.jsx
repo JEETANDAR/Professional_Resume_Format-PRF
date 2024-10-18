@@ -1,6 +1,6 @@
 // React Files
 import { IonIcon } from '@ionic/react';
-import { bookOutline } from 'ionicons/icons';
+// import { bookOutline, code } from 'ionicons/icons';
 
 // Components
 import TimeLineStops from "./TimeLineStops";
@@ -13,7 +13,7 @@ export default function TimeLine({ iconSymbol, iconName }) {
         <>
             <div className="title-wrapper">
                 <div className="icon-box">
-                    <IonIcon icon={bookOutline} />
+                    <IonIcon icon={iconSymbol} />
                 </div>
                 <h3 className="h3">{iconName}</h3>
             </div>
