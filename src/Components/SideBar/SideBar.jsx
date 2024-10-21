@@ -10,9 +10,10 @@ import { chevronDown } from 'ionicons/icons';
 // Importing all the Data.
 import { iconDS, socialLinks } from "../../Data/iconDataSheet";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const skills = [
+  "Developer",
   "Backend Development",
   "python developer",
   "React developer",
@@ -23,6 +24,7 @@ const skills = [
 
 export default function SideBar() {
   const [btnActive, setBTNActive] = useState(0);
+  const [skillIndex, setSkillIndex] = useState(0);
   
   function butionState() {
     setBTNActive((prev) => !prev);
@@ -31,6 +33,14 @@ export default function SideBar() {
   if (document.documentElement.clientWidth > 1440) {
     setBTNActive((prev) => !prev);
   }
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setSkillIndex((prev) => (prev === skills.length - 1 ? 0 : prev + 1));
+    }, 10000);
+  
+    return () => clearTimeout(timeout); // Cleanup the timeout when component unmounts
+  }, [skillIndex, skills.length]);
 
   return (
     <>
@@ -44,7 +54,7 @@ export default function SideBar() {
             <h1 className="name" title="Richard hanrick">
               Arden Diago
             </h1>
-          <p className="title">Developer</p>
+          <p className="title">{skills[skillIndex].toUpperCase()}</p>
           </div>
           <button className="info_more-btn" data-sidebar-btn onClick={butionState}>
             <span>Show Contacts</span>
