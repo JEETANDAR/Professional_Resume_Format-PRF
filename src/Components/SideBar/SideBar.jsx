@@ -8,7 +8,7 @@ import { IonIcon } from "@ionic/react";
 import { chevronDown } from 'ionicons/icons';
 
 // Importing all the Data.
-import { iconDS, socialLinks } from "../../Data/iconDataSheet";
+import { iconDS, socialLinks } from "../../Data/SideBarInfoData.js";
 
 import { useState, useEffect } from "react";
 
