@@ -8,7 +8,7 @@ import { useState } from "react";
 import {
   CertificatesArray,
   CertificatesValues,
-} from "../../../../Data/CertificatesData";
+} from "../../../../Data/CertificatesData.js";
 
 // importing SVG file
 import searchIcon from "../../../../assets/svgFiles/Gallery/searchIcon.svg";

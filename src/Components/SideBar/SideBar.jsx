@@ -8,18 +8,10 @@ import { IonIcon } from "@ionic/react";
 import { chevronDown } from 'ionicons/icons';
 
 // Importing all the Data.
-import { iconDS, socialLinks } from "../../Data/SideBarInfoData.js";
+import { iconDS, socialLinks, skills } from "../../Data/AsideData";
 
 import { useState, useEffect } from "react";
 
-const skills = [
-  "Developer",
-  "Backend Development",
-  "python developer",
-  "React developer",
-  "Linux newbie",
-  "AI enthusiast",
-];
 
 
 export default function SideBar() {
