@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import profilePhote from "../../assets/images/my-avatar.png";
 
-// Imporing the components
+// Importing components
 import ListInfo from "./ListInfo";
 import SocialLinks from "./SocialLinks";
 
@@ -10,28 +11,29 @@ import { chevronDown } from 'ionicons/icons';
 // Importing all the Data.
 import { iconDS, socialLinks, skills } from "../../Data/AsideData";
 
-import { useState, useEffect } from "react";
-
-
-
 export default function SideBar() {
   const [btnActive, setBTNActive] = useState(0);
   const [skillIndex, setSkillIndex] = useState(0);
-  
-  function butionState() {
+
+  // Toggle button state on click
+  function buttonState() {
     setBTNActive((prev) => !prev);
   }
 
-  if (document.documentElement.clientWidth > 1440) {
-    setBTNActive((prev) => !prev);
-  }
+  // Adjust sidebar state based on screen width
+  useEffect(() => {
+    if (document.documentElement.clientWidth > 1440) {
+      setBTNActive(1); // Default active state for wide screens
+    }
+  }, []); // Run only once on mount
 
+  // Automatically rotate skills
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSkillIndex((prev) => (prev === skills.length - 1 ? 0 : prev + 1));
     }, 10000);
-  
-    return () => clearTimeout(timeout); // Cleanup the timeout when component unmounts
+
+    return () => clearTimeout(timeout); // Cleanup the timeout when the component unmounts
   }, [skillIndex, skills.length]);
 
   return (
@@ -46,11 +48,10 @@ export default function SideBar() {
             <h1 className="name" title="Richard hanrick">
               Arden Diago
             </h1>
-          <p className="title">{skills[skillIndex].toUpperCase()}</p>
+            <p className="title">{skills[skillIndex].toUpperCase()}</p>
           </div>
-          <button className="info_more-btn" data-sidebar-btn onClick={butionState}>
+          <button className="info_more-btn" data-sidebar-btn onClick={buttonState}>
             <span>Show Contacts</span>
-
             <IonIcon icon={chevronDown} />
           </button>
         </div>
