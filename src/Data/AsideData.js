@@ -1,3 +1,5 @@
+/** @format */
+
 import {
   mailOutline,
   phonePortraitOutline,
@@ -16,7 +18,6 @@ export const skills = [
   "Linux newbie",
   "AI enthusiast",
 ];
-
 
 export const iconDS = [
   {

@@ -1,11 +1,10 @@
-import Digital_101 from "../assets/Certificates/Digital_101.jpg";
 import First from "../assets/Certificates/Demo.jpeg";
 
 export const CertificatesValues = ["Participation", "Winning", "Course"];
 
 export const CertificatesArray = [
   {
-    image: Digital_101,
+    image: First,
     imageTitle: "Digital 101",
     certificateDis: "Participation",
     description:
