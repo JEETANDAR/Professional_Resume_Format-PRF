@@ -11,8 +11,9 @@
 
 ## Demo
 
-![Desktop Demo](./path-to-desktop-demo-image "Desktop Demo")
-![Mobile Demo](./path-to-mobile-demo-image "Mobile Demo")
+![Desktop Demo](website-demo-image/desktop.png "Desktop Demo")
+
+![Mobile Demo](website-demo-image/mobile.png "Mobile Demo")
 
 ## Table of Contents
 - [Features](#features)
@@ -41,7 +42,7 @@ To set up **PRF (Professional Resume Format)** locally, follow these steps:
 
 ### Step 1: Clone the repository
 ```bash
-git clone https://github.com/yourusername/PRF.git
+git clone https://github.com/ArdenDiago/Professional_Resume_Format-PRF.git
 ```
 
 ### Step 2: Navigate to the project directory
@@ -71,12 +72,16 @@ yarn start
 
 Briefly explain how users can navigate or interact with the project. Include any usage examples if necessary.
 
+The necessary files are located in the **Data** folder, which is found in `./src/Data`. This folder contains all the information you need to populate your website with details. For any other changes, please explore the code and identify the relevant sections where modifications can be made.
+
+To change the icons for the **TechSpace**, navigate to `./src/Components/Article/TechSpace/Icons.jsx`. This file contains all the icons used in TechSpace. If the desired icon is not available, you may need to obtain the **SVG** code for the icon and add it manually.
+
 ## Contact
 
 For any questions or feedback, feel free to reach out to me:
 
-- **Twitter**: [@yourusername](https://x.com/ArdenDiago)
-- **Email**: [your-email@example.com](mailto:diagoarden@gmail.com)
+- **Twitter**: [@ArdenDiago](https://x.com/ArdenDiago)
+- **Email**: [diagoarden@gmail.com](mailto:diagoarden@gmail.com)
 
 ## License
 
@@ -92,4 +97,4 @@ Git Hub Link:
 
 ---
 
-*Made with ❤️ by [Arden Diago](https://github.com/ArdenDiago)*
+*Revise by [Arden Diago](https://github.com/ArdenDiago)*
