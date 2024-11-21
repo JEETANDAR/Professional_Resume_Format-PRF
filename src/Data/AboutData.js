@@ -1,7 +1,7 @@
 /** @format */
 
 export const AboutMeText = [
-  "Hi, I’m Arden Diago from Mumbai, currently based in Bangalore. I’m in my third year of a BCA program, deeply passionate about programming and lifelong learning. Over time, I’ve worked on various projects, gaining valuable experience and strengthening my expertise in the field. During my second year, I served as the department secretary, where I enhanced my leadership and organizational abilities. Alongside programming, I enjoy playing music and have a particular love for Python. I’m always eager to explore and master new programming languages. My proficiency spans Python, with experience in React, JavaScript, Java, and C. I’m enthusiastic about the future and am eager to expand my skills further while contributing to exciting and innovative projects.",
+  "Hi, I’m Jeetandar and from Bangalore",
 ];
 
 // Importing Images
